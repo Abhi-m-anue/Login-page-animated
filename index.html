@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Celebrare</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <nav>
+          <ul class="nav-links">
+            <li class="logo">
+              <img src="/assets/logo.png" />
+              <a><strong>REGIONS</strong><br />Mortgage</a>
+            </li>
+            <li>
+              <a class="enroll-link">
+                Are you a new customer?
+                <div class="drop-down-trigger">
+                  <strong class="badge">Enroll Now</strong>
+                </div>
+                <div class="drop-down-menu">
+                  <h5>Enroll now to:</h5>
+                  <div>
+                    <p>
+                      <span class="check-mark">&checkmark;</span> Access your
+                      loans online
+                    </p>
+                    <p>
+                      <span class="check-mark">&checkmark;</span> Pay your
+                      mortgage online
+                    </p>
+                    <p>
+                      <span class="check-mark">&checkmark;</span> View your
+                      mortgage statements
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="login-card">
+          <div class="login-card-header">
+            <h2>Welcome Back</h2>
+            <p>Sign in to your Regions My Mortgage account</p>
+          </div>
+          <div class="login-card-content">
+            <div class="input-container">
+              <label for="onlineId">Online ID</label>
+              <input name="onlineId" id="onlineId" type="text" />
+            </div>
+            <div class="input-container password-container">
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+              <button
+                type="button"
+                id="toggle-password"
+                class="toggle-password"
+                onclick="handleToggle()"
+              >
+                Show
+              </button>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" /><span>Remember me</span>
+            </div>
+            <button class="login-btn" onclick="handleLogin()">
+              <p class="login-txt">Login</p>
+              <div class="spinner"></div>
+            </button>
+          </div>
+          <div class="login-card-footer">
+            <p>Forgot online ID?</p>
+            <p>Forgot password?</p>
+          </div>
+          <div class="footer">
+            2023 Regions Financial Corporation . All Rights Reserved
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <img class="image" src="/assets/apartment.png" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
